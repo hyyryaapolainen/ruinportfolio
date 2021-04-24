@@ -1,0 +1,50 @@
+$--main-bg-color: white
+$--side-bg-color: black
+$--accent-color: black
+
+*
+  margin: 0px
+  padding: 0px
+  box-sizing: border-box    
+  font-family: 'Open Sans', sans-serif
+.header
+  margin: 0.5em 0 2em 0
+.nav-links 
+  display: flex
+  justify-content: space-around
+  margin: auto
+  width: 80%
+  padding: 0
+  a
+    list-style: none
+    text-decoration: none
+.footer
+  display: flex
+  justify-content: space-around
+  align-items: center
+  min-height: 4vh
+  background-color: $--accent-color
+  position: fixed
+  bottom: 0
+  left: 0
+  right: 0
+.footer-links
+  display: flex
+  justify-content: space-around
+  width: 50%
+  a
+    text-decoration: none
+    letter-spacing: 3px
+    font-weight: bold
+    font-size: 30px
+  li
+    list-style: none
+.center
+  justify-content: space-around
+  display: flex
+  height: 100%
+.center.main
+  align-items: center
+  height: 100%
+  width: 100%
+  z-index: -10
