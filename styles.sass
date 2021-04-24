@@ -1,33 +1,37 @@
 $--main-bg-color: white
 $--side-bg-color: black
-$--accent-color: black
-
+$--accent-color: rgb(0, 153, 23)
+$--light-accent-color: rgb(0, 209, 31)
 *
   margin: 0px
   padding: 0px
   box-sizing: border-box    
-  font-family: 'Open Sans', sans-serif
+  font-family: 'Podkova', serif;
 .header
-  margin: 0.5em 0 2em 0
+  margin: 0
+  background-color: $--side-bg-color
+.header-item
+    font-size: 20px
 .nav-links 
   display: flex
   justify-content: space-around
   margin: auto
-  width: 80%
-  padding: 0
-  a
+  padding: 0.5em
+  li
     list-style: none
     text-decoration: none
+    color: white
 .footer
   display: flex
   justify-content: space-around
   align-items: center
   min-height: 4vh
-  background-color: $--accent-color
+  background-color: $--side-bg-color
   position: fixed
   bottom: 0
   left: 0
   right: 0
+  z-index: 1
 .footer-links
   display: flex
   justify-content: space-around
@@ -37,14 +41,71 @@ $--accent-color: black
     letter-spacing: 3px
     font-weight: bold
     font-size: 30px
+    color: white
   li
     list-style: none
 .center
-  justify-content: space-around
   display: flex
   height: 100%
-.center.main
-  align-items: center
-  height: 100%
-  width: 100%
-  z-index: -10
+  width: 80%
+  margin: 1em auto
+  flex-direction: column
+.content-title
+    text-align: left
+    margin-bottom: 5em
+    width: 20%
+    color: $--light-accent-color
+.content-container
+    margin-bottom: 5em
+.content
+    display: flex
+    justify-content: space-around
+    flex-direction: row
+.content-image
+    width: 50%
+    height: 100%
+.content-video
+  position: relative
+  overflow: hidden
+  width: 50%
+  padding-top: 26%
+.iframe
+    position: absolute
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+    width: 100%
+    height: 100%
+.content-text
+    margin: 1em 2em 1em 0;
+    width: 50%
+    height: 100%
+    font-size: 1.5em
+.technologies
+    list-style: none
+    display: flex
+    justify-content: space-around
+.list-item
+    text-align: center
+    width: 50%
+.logo-image
+    font-size: 100px
+.logo-text-list
+    list-style: none
+.content-gallery
+    width: 50%
+    margin: auto
+.logo-text-title
+    color: $--light-accent-color
+    font-size: 110%
+.pageLink
+    text-decoration: none
+    color: $--main-bg-color
+    transition: 1s
+    &:visited
+        color: $--light-accent-color
+    &:hover
+        color: $--accent-color
+
+        

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title> Ruin Portfolio </title>
+        <meta charset="UTF-8">
+        <link href="../styles.css" rel ="stylesheet" type="text/css">
+        <meta name="description" content="Ruingame Technical Portfolio">
+        <meta name="keywords" content ="Ruingame Technical Portfolio">
+        <meta name="author" content ="Aapo H L7034">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/262231e24c.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Podkova&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js" type="text/javascript"></script>
+          
+        <!-- nanogallery2 -->
+        <link  href="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
+        <script  type="text/javascript" src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"></script>
+   
+
+    </head>
+<body>
+<!-- #region header-->
+<div class="header">
+        <ul class="nav-links">
+                <li class="header-item">
+                        <p class="header-text">Aapo Hyyryläinen</p>
+                </li>
+                <li class="header-item">
+                        <a class ="pageLink" href="../index.html">Ruin Portfolio </a>
+                </li>
+        </ul>
+</div>
+ <!-- #endregion -->
+<!-- #region title-->
+<div class="center">
+ <!-- #endregion -->
+<!-- #region programming-->
+<div class="content-container">
+    <div class="content-title" style="text-align: center; margin: auto">
+    <h2 style ="font-size: 50px; text-align: center;">Programming</h2>
+    </div>
+    <div class ="content">
+            <div class="content-text">
+            <div style="font-size: 30px; text-align: left;">
+
+                <p style ="font-size: 35px; font-weight: bold;">Enemy AI</p><br>
+                <p>
+                I designed and developed our core AI and pathfinding using a weighted system where the enemy will select a random point in it's patrol area if it has not yet located the player.
+                </p><p>Once an enemy spots the player, they will all alert to the player and try to pathfind towards to player. 
+                </p>
+                <p>The system uses directed raycasts to determine if any obstacles to the path is hit and then weighs that specific direction using simple parameters given.
+                </p>
+                <br><br>
+                <p style ="font-size: 35px; font-weight: bold;">Reflection</p><br>
+                <p>
+                
+                Overall I feel like the actual logic behind the system is well done, it could use more parameters to determine a path such as other enemy locations and player proximity.
+            </div>
+            </div>
+            <div class="content-gallery">
+                <div id="nanogallery2"
+ 
+                data-nanogallery2 = '{
+                      "thumbnailHeight":  400,
+                      "thumbnailWidth":   150,
+                    }' >
+                    
+                <!-- gallery content -->
+                <a href = "../images/BaseState.png" > Enemy Base State </a>
+                <a href = "../images/EnemyStateMachine.png"> Enemy State Machine</a>
+                <a href = "../images/MovetowardsPlayer.png"> Move Towards Player State </a>
+                <a href = "../images/Weighted.png"> Weighted direction </a>
+                <a href = "../images/EnemyPathfinding.png"> Enemy Pathfinding </a>
+            </div>
+            </div>
+    </div> 
+    
+    <video width="100%" height="600" controls>
+        <source src="../videos/EnemyView.mp4" type="video/mp4">
+    </video>
+    <p>Enemy vision visualization</p>
+</div>
+
+<div class="content-container">
+    <div class="content-title">
+    <h1>Other Stuff</h1>
+    </div>
+    <div class ="content">
+            <div class="content-text">
+            <p style="font-size: 30px; text-align: left; margin-right: 2em">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non eros feugiat, tincidunt mauris non, accumsan leo. Nam nec lectus leo. Phasellus sit amet cursus leo. Nullam maximus tristique mauris quis pretium. Phasellus felis erat, euismod eu cursus ac, accumsan ut diam. Duis interdum nisl id eros fermentum vulputate. Donec posuere fringilla lorem quis tempor. Nunc vitae accumsan massa, mollis egestas lectus.
+            </p>
+            </div>
+            <div class="content-gallery">
+                <div id="nanogallery2"
+ 
+                data-nanogallery2 = '{
+                      "thumbnailHeight":  400,
+                      "thumbnailWidth":   150,
+                      "itemsBaseURL":     "https://nanogallery2.nanostudio.org/samples/"
+                    }' >
+                    
+                <!-- gallery content -->
+                <a href = "berlin1.jpg"   data-ngThumb = "berlin1_t.jpg" > Berlin 1 </a>
+                <a href = "berlin2.jpg"   data-ngThumb = "berlin2_t.jpg" > Berlin 2 </a>
+                <a href = "berlin3.jpg"   data-ngThumb = "berlin2_t.jpg" > Berlin 3 </a>
+            </div>
+            </div>
+    </div> 
+</div>
+
+ <!-- #endregion -->
+ <!-- ### start of the gallery definition ### -->
+ <div class="content-container">
+ </div> 
+<!-- #region footer -->
+ <footer>
+        <div class="footer">
+            <ul class="footer-links">
+                <li>
+                    <a  href="mailto:a.hyyrylainen79@gmail.com"><i class="fa fa-envelope"></i></a>
+                </li>
+                <li>
+                    <a href="https://github.com/hyyryaapolainen/"><i class="fab fa-github-square"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/aapo-hyyryl%C3%A4inen-72baa7158/"><i class="fab fa-linkedin"></i></a>
+                </li>
+            </ul>
+        </div>
+        </footer>
+ <!-- #endregion -->
+ <!-- Aapo Hyyryläinen L7034-->
+ <!-- Additional JS-->
+</body>
+</html>
