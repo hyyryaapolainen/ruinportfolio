@@ -35,9 +35,6 @@
  <!-- #endregion -->
 <!-- #region preface-->
         <div class="content-container">
-                <div class="content-title">
-                        <h1>Preface</h1>
-                </div>
                 <div class ="content">
                         <div class="content-text">
                                 <p>
@@ -49,7 +46,7 @@
                                 <i> "I want to become more confident in my programming which comes with experience so that I do not have to Google at every step, but can use my own skills and deduction to produce solutions on my own in future projects as well. Procedural generation and reusability of code are big priorities. Testing planning and testing itself is interesting to me."</i>
                                 </p> <br>
                                 <p>
-                                In the following documentation I will go through my learning experiences as a programmer and a tester as well as showcase some of the work I did during the project
+                                This website serves as a post-mortem to the game production from my personal perspective.
                                 </p>
                         </div>
                         <div class="content-video"><iframe class="iframe"
@@ -58,160 +55,325 @@
                 </div>
         </div>
  <!-- #endregion -->
-  <!-- #region programming-->
-  <div class="content-container">
+ <!-- #region overview-->   
+ <div class="content-container">
         <div class="content-title">
-        <a class="pageLink" href="./pages/Programming.html"><h1>Programming</h1></a>
+                <h1>Summary</h1>
+        </div>
+        <ul class="technologies">
+                <li class="list-item">
+                        <div class="logo-image">
+                                <i class="fas fa-user-clock"></i>
+                        </div>
+                        <ul class="logo-text-list">
+                                <li class ="logo-text-title">
+                                        <p> Main Tasks</p>
+                                </li>
+                                <li class="logo-text-item">
+                                        <p>C# Programming</p>
+                                </li>
+                                <li class="logo-text-item">
+                                        <p>Unity Implementation</p>
+                                </li>
+                                <li class="logo-text-item">
+                                        <p>Version Control</p>
+                                </li>
+                                <li class ="logo-text-title">
+                                        <br>
+                                        <p> Other Tasks</p>
+                                </li>
+                                <li class="logo-text-item">
+                                        <p>Testing</p>
+                                </li>
+                                <li class="logo-text-item">
+                                        <p>Technical Art</p>
+                                </li>
+                                <li class="logo-text-item">
+                                        <p>Game Design</p>
+                                </li>
+                        </ul>
+                </li>
+                <li class="list-item">
+                        <div class="logo-image">
+                                <i class="fas fa-cubes"></i>
+                        </div>
+                        <ul class="logo-text-list">
+                                <li class ="logo-text-title">
+                                        <p> Project Contribution </p>
+                                </li>
+                                <li class="logo-text-item">
+                                        <p>177 Commits</p>
+                                </li>
+                                <li class="logo-text-item">
+                                        <p>Testing</p>
+                                </li>
+                                <li class="logo-text-item">
+                                        <p>Design Documentation</p>
+                                </li>
+                                <li class="logo-text-item">
+                                        <p>Technical Assistance</p>
+                                </li>
+                                <li class="logo-text-item">
+                                        <p>Programming Guidelines</p>
+                                </li>
+                                <li class="logo-text-item">
+                                        <p>Version Control Handling</p>
+                                </li>
+                        </ul>
+                </li>
+                <li class="list-item">
+                        <div class="logo-image">
+                                <i class="fas fa-tools"></i>
+                        </div>
+                        <ul class="logo-text-list">
+                                <li class ="logo-text-title">
+                                        <p> Main Tools </p>
+                                </li>
+                                <li class="logo-text-item">
+                                        <p>Unity</p>
+                                </li>
+                                <li class="logo-text-item">
+                                        <p>C#</p>
+                                </li>
+                                <li class="logo-text-item">
+                                        <p>JetBrains Rider</p>
+                                </li>
+                                <li class="logo-text-item">
+                                        <p>GitHub</p>
+                                </li>
+                                <li class="logo-text-item">
+                                        <p>ZenHub</p>
+                                </li>
+                        </ul>
+                </li>
+        </ul>
+</div>
+<!-- #endregion -->
+ <!-- #region learning-->   
+ <div class="content-container">
+        <div class="content-title">
+                <h1>Learning</h1>
+        </div>
+        <ul class="technologies">
+                <li class="list-item">
+                        <div class="logo-image">
+                                <i class="fab fa-unity"></i>
+                        </div>
+                        <ul class="logo-text-list">
+                                <li class ="logo-text-title">
+                                        <p> New </p>
+                                </li>
+                                <li class="logo-text-item">
+                                        <p>Gizmos</p>
+                                </li>
+                                <li class="logo-text-item">
+                                        <p>Custom Editor Scripts</p>
+                                </li>
+                                <li class="logo-text-item">
+                                        <p>Controller Support</p>
+                                </li>
+                                <li class="logo-text-item">
+                                        <p>Visual Effect Graph</p>
+                                        <br>
+                                </li>
+                                <li class ="logo-text-title">
+                                        <p> Improved </p>
+                                </li>
+                                <li class="logo-text-item">
+                                        <p>Animator</p>
+                                </li>
+                                <li class="logo-text-item">
+                                        <p>Visualisation</p>
+                                </li>
+                                <li class="logo-text-item">
+                                        <p>Editor Organisation</p>
+                                        
+                                </li>
+                                <li class="logo-text-item">
+                                        <p>Shader Graph</p>
+                                </li>
+                        </ul>
+                </li>
+                <li class="list-item">
+                        <div class="logo-image">
+                                <i class="fab fa-github-square"></i>
+                        </div>
+                        <ul class="logo-text-list">
+                                <li class ="logo-text-title">
+                                        <p> New </p>
+                                </li>
+                                <li class="logo-text-item">
+                                        <p>Handling Pull Requests</p>
+                                </li>
+                                <li class="logo-text-item">
+                                        <p>Organising Feature Branches</p>
+                                </li>
+                                <li class="logo-text-item">
+                                        <p>Sprint Version Control</p>
+                                        <br>
+                                </li>
+                                <li class ="logo-text-title">
+                                        <p> Improved </p>
+                                </li>
+                                <li class="logo-text-item">
+                                        <p>Version Control Practices</p>
+                                </li>
+                                <li class="logo-text-item">
+                                        <p>Programming Workflow</p>
+                                </li>
+                        </ul>
+                </li>
+                <li class="list-item">
+                        <div class="logo-image">
+                                <p>C#</p>
+                        </div>
+                        <ul class="logo-text-list">
+                                <li class ="logo-text-title">
+                                        <p> New </p>
+                                </li>
+                                <li class="logo-text-item">
+                                        <p>Game Architecture Planning</p>
+                                </li>
+                                <li class="logo-text-item">
+                                        <p>Performance Optimisation</p>
+                                        <br>
+                                </li>
+                                <li class ="logo-text-title">
+                                        <p> Improved </p>
+                                </li>
+                                <li class="logo-text-item">
+                                        <p>Code Reusability</p>
+                                </li>
+                                <li class="logo-text-item">
+                                        <p>Systemic Thinking</p>
+                                </li>
+                                <li class="logo-text-item">
+                                        <p>Code Planning</p>
+                                </li>
+                        </ul>
+                </li>
+                <li class="list-item">
+                        <div class="logo-image">
+                                <i class="fas fa-users"></i>
+                        </div>
+                        <ul class="logo-text-list">
+                                <li class ="logo-text-title">
+                                        <p> New </p>
+                                </li>
+                                <li class="logo-text-item">
+                                        <p>Team Game Development</p>
+                                </li>
+                                <li class="logo-text-item">
+                                        <p>Implementing Design</p>
+                                
+                                </li>
+                                <li class="logo-text-item">
+                                        <p>Scrum</p>
+                                        <br>
+                                </li>
+                                <li class ="logo-text-title">
+                                        <p> Improved </p>
+                                </li>
+                                <li class="logo-text-item">
+                                        <p>Interpersonal Skills</p>
+                                </li>
+                                <li class="logo-text-item">
+                                        <p>Contributing Ideas</p>
+                                </li>
+                                <li class="logo-text-item">
+                                        <p>Personal Reflection</p>
+                                </li>
+                                <li class="logo-text-item">
+                                        <p>Taking Responsibility</p>
+                                </li>
+                        </ul>
+                </li>
+        </ul>
+</div>
+<div class="content-title center">
+        <p style ="font-size: 30px; text-align: center; width: 150%" class="pageLink" href="../index.html">Click on any of the following titles to learn more!</p>
+    </div>
+<!-- #endregion -->
+  <!-- #region programming-->
+  <div class="content-container" id="programming">
+        <div class="content-title">
+        <a class="pageLink"  href="./pages/Programming.html"><h1>Programming</h1></a>
         </div>
         <div class ="content">
-                <p style="font-size: 30px;">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non eros feugiat, tincidunt mauris non, accumsan leo. Nam nec lectus leo. Phasellus sit amet cursus leo. Nullam maximus tristique mauris quis pretium. Phasellus felis erat, euismod eu cursus ac, accumsan ut diam. Duis interdum nisl id eros fermentum vulputate. Donec posuere fringilla lorem quis tempor. Nunc vitae accumsan massa, mollis egestas lectus.
+                <div class="content-text" style="text-align: left; width: 100%">
+                <p>
+                During the project, I acted as the lead developer 
+                in charge of most of the technical features. 
+                </p><br>
+                <p>I implemented the background managing systems 
+                for the game logic, basic combat and skills systems,
+                Enemy AI, Artifact system, UI code and editor scripts to help with game design.
+                </p><br>
+                <p>
+                I learned about how to organize myself and my workflow to produce efficient results during each sprint. I also became a more confident programmer overall during the course.
                 </p>
+        </div>
         </div> 
-
  </div>
  <!-- #endregion -->
 <!-- #region testing-->
-<div class="content-container">
+<div class="content-container"  id="testing">
         <div class="content-title">
         <a class="pageLink" href="./pages/Testing.html"><h1>Testing</h1></a>
         </div>
         <div class ="content">
-                <p style="font-size: 30px;">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non eros feugiat, tincidunt mauris non, accumsan leo. Nam nec lectus leo. Phasellus sit amet cursus leo. Nullam maximus tristique mauris quis pretium. Phasellus felis erat, euismod eu cursus ac, accumsan ut diam. Duis interdum nisl id eros fermentum vulputate. Donec posuere fringilla lorem quis tempor. Nunc vitae accumsan massa, mollis egestas lectus.
-                </p>
-        </div> 
-</div>
- <!-- #endregion -->
-<!-- #region technologies-->   
- <div class="content-container">
-                <div class="content-title">
-                        <h1>Technologies</h1>
+                <div class="content-text" style="text-align: left; width: 100%">
+                <p>
+                I did testing as a side project to programming
+                </p><br>
+                <p>I planned out tests for every Sprint we had. The tests varied from simple questionnaires to gameplay tests.
+                </p><br>
+                <p>
+                 I reported testing results to my teammates and suggested potential points of action we should consider when planning the next set of features.
+               </p><br>
+               <p>
+                I learned about handling feedback, dealing with different opinions, thinking outside of the box and communication with my teammates.
+              </p>
                 </div>
-                <ul class="technologies">
-                        <li class="list-item">
-                                <div class="logo-image">
-                                        <i class="fab fa-unity"></i>
-                                </div>
-                                <ul class="logo-text-list">
-                                        <li class ="logo-text-title">
-                                                <p> New </p>
-                                        </li>
-                                        <li class="logo-text-item">
-                                                <p>Gizmos</p>
-                                        </li>
-                                        <li class="logo-text-item">
-                                                <p>Custom Editor Scripts</p>
-                                        </li>
-                                        <li class="logo-text-item">
-                                                <p>Controller Support</p>
-                                        </li>
-                                        <li class="logo-text-item">
-                                                <p>Visual Effect Graph</p>
-                                                <br>
-                                        </li>
-                                        <li class ="logo-text-title">
-                                                <p> Improved </p>
-                                        </li>
-                                        <li class="logo-text-item">
-                                                <p>Animator</p>
-                                        </li>
-                                        <li class="logo-text-item">
-                                                <p>Visualisation</p>
-                                        </li>
-                                        <li class="logo-text-item">
-                                                <p>Editor Organisation</p>
-                                                
-                                        </li>
-                                        <li class="logo-text-item">
-                                                <p>Shader Graph</p>
-                                        </li>
-                                </ul>
-                        </li>
-                        <li class="list-item">
-                                <div class="logo-image">
-                                        <i class="fab fa-github-square"></i>
-                                </div>
-                                <ul class="logo-text-list">
-                                        <li class ="logo-text-title">
-                                                <p> New </p>
-                                        </li>
-                                        <li class="logo-text-item">
-                                                <p>Handling Pull Requests</p>
-                                        </li>
-                                        <li class="logo-text-item">
-                                                <p>Organising Feature Branches</p>
-                                        </li>
-                                        <li class="logo-text-item">
-                                                <p>Sprint Version Control</p>
-                                                <br>
-                                        </li>
-                                        <li class ="logo-text-title">
-                                                <p> Improved </p>
-                                        </li>
-                                        <li class="logo-text-item">
-                                                <p>Version Control Practices</p>
-                                        </li>
-                                        <li class="logo-text-item">
-                                                <p>Programming Workflow</p>
-                                        </li>
-                                </ul>
-                        </li>
-                        <li class="list-item">
-                                <div class="logo-image">
-                                        <p>C#</p>
-                                </div>
-                                <ul class="logo-text-list">
-                                        <li class ="logo-text-title">
-                                                <p> New </p>
-                                        </li>
-                                        <li class="logo-text-item">
-                                                <p>Game Architecture Planning</p>
-                                        </li>
-                                        <li class="logo-text-item">
-                                                <p>Performance Optimisation</p>
-                                                <br>
-                                        </li>
-                                        <li class ="logo-text-title">
-                                                <p> Improved </p>
-                                        </li>
-                                        <li class="logo-text-item">
-                                                <p>Code Reusability</p>
-                                        </li>
-                                        <li class="logo-text-item">
-                                                <p>Systemic Thinking</p>
-                                        </li>
-                                        <li class="logo-text-item">
-                                                <p>Code Planning</p>
-                                        </li>
-                                </ul>
-                        </li>
-                </ul>
-</div>
+        </div> 
+ </div>
  <!-- #endregion -->
  <!-- #region content-->
- <div class="content-container">
+ <div class="content-container"  id="content" >
         <div class="content-title">
                 <a class="pageLink" href="./pages/Content.html"><h1>Content</h1></a>
         </div>
         <div class ="content">
-                <p style="font-size: 30px;">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non eros feugiat, tincidunt mauris non, accumsan leo. Nam nec lectus leo. Phasellus sit amet cursus leo. Nullam maximus tristique mauris quis pretium. Phasellus felis erat, euismod eu cursus ac, accumsan ut diam. Duis interdum nisl id eros fermentum vulputate. Donec posuere fringilla lorem quis tempor. Nunc vitae accumsan massa, mollis egestas lectus.
-                </p>
+                <div class="content-text"style="text-align: left; width: 100%">
+                <p>
+                During the project I also created some visuals via Unity's shader graph, particle system and visual effect graph.
+                </p><br>
+                <p>
+                I also participated in Game Design discussion around combat, mechanics that might be interesting, how the implementation would be done and technical limitations
+                </p><br>
+                <p>
+                I learned about the entire process it takes for a feature to go from drafting table to actual in-game playability
+                </p><br>
+                </div>
         </div> 
-</div>
+ </div>
  <!-- #endregion -->
   <!-- #region reflection-->
-  <div class="content-container">
+  <div class="content-container"  id="reflection">
     <div class="content-title">
             <h1>Reflection</h1>
         </div>
         <div class ="content">
-                <p style="font-size: 30px;">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non eros feugiat, tincidunt mauris non, accumsan leo. Nam nec lectus leo. Phasellus sit amet cursus leo. Nullam maximus tristique mauris quis pretium. Phasellus felis erat, euismod eu cursus ac, accumsan ut diam. Duis interdum nisl id eros fermentum vulputate. Donec posuere fringilla lorem quis tempor. Nunc vitae accumsan massa, mollis egestas lectus.
-                </p>
+                <div class="content-text" style="text-align: left; width: 100%">
+                <p>
+                This project taught me a lot about the pains and joys of working as a group to make an enjoyable and functioning game
+                </p><br>
+                <p>
+                I feel like I've become a better overall teamworker and a programmer through the experiences gained at TiCorporate
+                </p><br>
+                </div>
         </div> 
-</div>
+ </div>
 <!-- #endregion -->
  <!-- #region footer -->
  <footer>

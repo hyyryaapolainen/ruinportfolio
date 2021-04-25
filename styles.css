@@ -129,8 +129,15 @@
 }
 
 .content-text {
-  margin: 1em 2em 1em 0;
+  margin-right: 2em;
   width: 50%;
+  height: 100%;
+  font-size: 1.5em;
+}
+
+.content-text-full {
+  margin: 1em 2em 1em 0;
+  width: 100%;
   height: 100%;
   font-size: 1.5em;
 }
@@ -160,6 +167,19 @@
 .content-gallery {
   width: 50%;
   margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.content-gallery img {
+  width: 200px;
+  height: 150px;
 }
 
 .logo-text-title {
@@ -169,7 +189,7 @@
 
 .pageLink {
   text-decoration: none;
-  color: white;
+  color: black;
   -webkit-transition: 1s;
   transition: 1s;
 }
@@ -180,5 +200,18 @@
 
 .pageLink:hover {
   color: #009917;
+}
+
+.gallery-image {
+  position: relative;
+  margin: 1em;
+}
+
+.gallery-image-text {
+  position: absolute;
+  text-align: center;
+  color: white;
+  top: 5%;
+  left: 10%;
 }
 /*# sourceMappingURL=styles.css.map */
