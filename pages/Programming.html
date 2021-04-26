@@ -122,8 +122,11 @@
                 The enemies could also be more responsive to player actions but I feel like I gained a basic understanding of both the design and implementation of enemy AI.
                 </p><br>
                 <p>
-                    Currently the game has only the melee variant of enemy AI implemented but the groundwork allows for the expansion of the enemy AI which was one of my set learning goals. 
+                Creating design documentation by myself really helped me in understanding how many moving parts actually need to be described for the instructions to be clear and measurable to implement.
                 </p><br>
+                <p>
+                    Currently the game has only the melee variant of enemy AI implemented but the groundwork allows for the expansion of the enemy AI which was one of my set learning goals. 
+                </p>
         </div>
 </div>
 <!-- #endregion -->
@@ -137,46 +140,48 @@
     <div class ="content">
             <div class="content-text">
                     <p>
-                        I designed and developed our core AI pathfinding using a weighted system where the enemy will select a random point in it's patrol area if it has not yet located the player.
+                    I implemented our combat system according to a combat mechanic diagram provided to me by the content producers.
                     </p>
                     <br>
                     <p>
-                        Once an enemy spots the player, they will all alert to the player and try to pathfind towards to player. 
+                    Our goal was to make combat fluid with simple comboes, animation cancelling mechanics, utilize multiple weapons, critical hits and have status effects that affect entities.
                     </p> <br>
                     <p>
-                        The system uses directed raycasts to determine if any obstacles to the path is hit and then weighs that specific direction using simple parameters given.
+                    I used Unity's scriptable objects to create combo attacks that can each be given their own animation and attack parameters. 
                     </p> <br>
                     <p>
-                        After the player is in attack range, the enemy will execute an attack that can be cancelled by the player by stunning it.
-                        </p><br>
-                        <p>
-                        After attacking the enemy will attempt to move towards the player again until it kills the player or dies itself.
-                        </p>  
+                    Game Designers can choose from a multitude of options to easily create different attacks to create interesting comboes.
+                    </p><br>
+                    <p>
+                    Attack handling will then use the combo pieces provided to execute attacks in sequence.
+                    </p><br>
+                    Animation cancelling is done inside the animator via checking the attack phase, which can be done with animation frame precision.
+                    <p>  
             </div>
             <div class="content-gallery">
                 <div class="gallery-image">
-                    <img src="../images/BaseState.png" alt="Base State" data-imagebox="g1">
-                    <p class="gallery-image-text">Base state</p>
+                    <img src="../images/AttackInterface.png" alt="Attack" data-imagebox="g2">
+                    <p class="gallery-image-text">Attack Interface</p>
                 </div>
                 <div class="gallery-image">
-                    <img src="../images/EnemyStateMachine.png" alt="Enemy Statemachine" data-imagebox="g1">
-                    <p class="gallery-image-text" style="font-size: 80%;">Enemy State Machine</p>
+                    <img src="../images/AttackMelee.png" alt="Melee Attack" data-imagebox="g2">
+                    <p class="gallery-image-text" style="font-size: 80%;">Melee Attack</p>
                 </div>
                 <div class="gallery-image">
-                    <img src="../images/MovetowardsPlayer.png" alt="Example state" data-imagebox="g1">
-                    <p class="gallery-image-text">Example State</p>
+                    <img src="../images/AttackInspector.png" alt="Attack Inspector" data-imagebox="g2">
+                    <p class="gallery-image-text">Attack Inspector</p>
                 </div>
                 <div class="gallery-image">
-                    <img src="../images/Weighted.png" alt="Weighing direction values" data-imagebox="g1">
-                    <p class="gallery-image-text">Weighing Direction</p>
+                    <img src="../images/AttackBase.png" alt="Attack Logic" data-imagebox="g2">
+                    <p class="gallery-image-text">Attack Logic</p>
                 </div>
                 <div class="gallery-image">
-                    <img src="../images/EnemyPathfinding.png" alt="Enemy Pathfinding Logic" data-imagebox="g1">
-                    <p class="gallery-image-text">Enemy Pathfinding</p>
+                    <img src="../images/GetAoEtTargets.png" alt="AoE targeting" data-imagebox="g2">
+                    <p class="gallery-image-text">AoE Targeting</p>
                 </div>
                 <div class="gallery-image">
-                    <img src="../images/enemyDesign.png" alt="Enemy AI Design" data-imagebox="g1">
-                    <p class="gallery-image-text">Enemy AI design</p>
+                    <img src="../images/playerAnimator.png" alt="Player Animator" data-imagebox="g2">
+                    <p class="gallery-image-text">Player Animator</p>
                 </div>
             </div>
     </div>
@@ -189,28 +194,30 @@
 <div class ="content-container">
         <div class="content-text-full">
             <p>
-                The main challenge was in making the enemy predictable enough so that the player can dodge and avoid their attacks but still challenging to the player.
+            The main challenge was implementing from design; Combat calculations were precisely determined but attack timings and making the system as modifiable as possible provided challenge in both implementation and planning
             </p><br>
             <p>
-                Overall the pathfinding works in the environments but it could use more parameters to determine a path such as other enemy locations and player proximity.
-                </p><br>
-                <p>
-                The design process and the document resulting from it really helped me understand the amount of work to make something basic work both mechanically
-                and in game feel.
-                </p><br>
-                <p>
-                The enemies could also be more responsive to player actions but I feel like I gained a basic understanding of both the design and implementation of enemy AI.
-                </p><br>
-                <p>
-                    Currently the game has only the melee variant of enemy AI implemented but the groundwork allows for the expansion of the enemy AI which was one of my set learning goals. 
-                </p><br>
+            Overall I met both goals in the system being easily accessible from the inspector and being expandable if more weapons or attacks were to be added.
+            </p><br>
+            <p>
+            This system taught me about implementing from design documentation where I have to consult the game designers about how they want the system to work and look like in their hands.
+            </p><br>
+            <p>
+            I think this system could be streamlined to work better with different animations and rigs but for the purposes of this project and my personal learning goals it fits the bill.
+            </p><br>
+            <p>
+            Currently the game has only one simple sword combo for the player and the enemies only use a single base attack. Adding different attacks would allow the player to attack in different patterns. 
+            </p><br>
+            <p>
+            Status effects exist in code but aren't tested for production and there is no planned way of them being afflicted to entities.
+            </p>
         </div>
 </div>
 <!-- #endregion-->
-<!-- #region combat system-->
+<!-- #region tbd-->
 <div class="content-container">
     <div class="content-title center" style="text-align: center; font-size: 120%">
-        <h1>Enemy Ai</h1></div>
+        <h1>Controller Support</h1></div>
     <div class="content-title" style="margin-bottom: 1em;">
         <h1>Overview</h1>
     </div>
@@ -235,28 +242,8 @@
             </div>
             <div class="content-gallery">
                 <div class="gallery-image">
-                    <img src="../images/BaseState.png" alt="Base State" data-imagebox="g1">
+                    <img src="../images/BaseState.png" alt="Base State" data-imagebox="g3">
                     <p class="gallery-image-text">Base state</p>
-                </div>
-                <div class="gallery-image">
-                    <img src="../images/EnemyStateMachine.png" alt="Enemy Statemachine" data-imagebox="g1">
-                    <p class="gallery-image-text" style="font-size: 80%;">Enemy State Machine</p>
-                </div>
-                <div class="gallery-image">
-                    <img src="../images/MovetowardsPlayer.png" alt="Example state" data-imagebox="g1">
-                    <p class="gallery-image-text">Example State</p>
-                </div>
-                <div class="gallery-image">
-                    <img src="../images/Weighted.png" alt="Weighing direction values" data-imagebox="g1">
-                    <p class="gallery-image-text">Weighing Direction</p>
-                </div>
-                <div class="gallery-image">
-                    <img src="../images/EnemyPathfinding.png" alt="Enemy Pathfinding Logic" data-imagebox="g1">
-                    <p class="gallery-image-text">Enemy Pathfinding</p>
-                </div>
-                <div class="gallery-image">
-                    <img src="../images/enemyDesign.png" alt="Enemy AI Design" data-imagebox="g1">
-                    <p class="gallery-image-text">Enemy AI design</p>
                 </div>
             </div>
     </div>
@@ -290,7 +277,7 @@
 <!-- #region combatsystem -->
 <div class="content-container">
     <div class="content-title center" style="text-align: center; font-size: 120%">
-        <h1>Combat System</h1></div>
+        <h1>Overall</h1></div>
     <div class="content-title" style="margin-bottom: 1em;">
         <h1>Overview</h1>
     </div>
@@ -315,28 +302,8 @@
             </div>
             <div class="content-gallery">
                 <div class="gallery-image">
-                    <img src="../images/BaseState.png" alt="Base State" data-imagebox="g1">
+                    <img src="../images/BaseState.png" alt="Base State" data-imagebox="g4">
                     <p class="gallery-image-text">Base state</p>
-                </div>
-                <div class="gallery-image">
-                    <img src="../images/EnemyStateMachine.png" alt="Enemy Statemachine" data-imagebox="g1">
-                    <p class="gallery-image-text" style="font-size: 80%;">Enemy State Machine</p>
-                </div>
-                <div class="gallery-image">
-                    <img src="../images/MovetowardsPlayer.png" alt="Example state" data-imagebox="g1">
-                    <p class="gallery-image-text">Example State</p>
-                </div>
-                <div class="gallery-image">
-                    <img src="../images/Weighted.png" alt="Weighing direction values" data-imagebox="g1">
-                    <p class="gallery-image-text">Weighing Direction</p>
-                </div>
-                <div class="gallery-image">
-                    <img src="../images/EnemyPathfinding.png" alt="Enemy Pathfinding Logic" data-imagebox="g1">
-                    <p class="gallery-image-text">Enemy Pathfinding</p>
-                </div>
-                <div class="gallery-image">
-                    <img src="../images/enemyDesign.png" alt="Enemy AI Design" data-imagebox="g1">
-                    <p class="gallery-image-text">Enemy AI design</p>
                 </div>
             </div>
     </div>
