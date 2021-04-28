@@ -157,12 +157,6 @@
   width: 100%;
 }
 
-.split-image > i {
-  heigth: 100%;
-  width: 100%;
-  font-size: 400px;
-}
-
 .content-video {
   position: relative;
   overflow: hidden;
