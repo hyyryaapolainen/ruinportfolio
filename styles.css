@@ -3,7 +3,7 @@
   padding: 0px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Podkova', serif;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .header {
@@ -157,6 +157,12 @@
   width: 100%;
 }
 
+.split-image > i {
+  heigth: 100%;
+  width: 100%;
+  font-size: 400px;
+}
+
 .content-video {
   position: relative;
   overflow: hidden;
@@ -228,6 +234,11 @@
 .logo-text-title {
   color: #00d11f;
   font-size: 110%;
+  font-weight: bold;
+}
+
+.logo-text-item {
+  font-weight: bold;
 }
 
 .pageLink {
