@@ -40,6 +40,94 @@
     </div>
 </div>
 <!-- #endregion -->
+<!-- #region combatsystem -->
+<div class="content-container title">
+    <div class="content-title center" style="text-align: center; font-size: 120%">
+        <h1>Combat System</h1></div>
+</div>
+<div class="content" style="margin-bottom: 5em">
+    <div class="content-container split left">
+        <div class="content-title" style="margin-bottom: 1em;">
+            <h1>Overview</h1>
+        </div>
+            <div class="content-text">
+                        <p>
+                        I implemented our combat system according to a combat mechanic diagram provided to me by the content producers.
+                        </p>
+                        <br>
+                        <p>
+                        The goal was to make combat fluid with simple comboes, animation cancelling mechanics, utilize multiple weapons, critical hits and have status effects that affect entities.
+                        </p> <br>
+                        <p>
+                        I used Unity's scriptable objects to create combo attacks that can each be given their own animation and attack parameters. I also experimented with creating an interface for the attack.
+                        </p> <br>
+                        <p>
+                        Game Designers can choose from a multitude of options to easily create different attacks to create interesting comboes.
+                        </p><br>
+                        <p>
+                        Attack handling will then use the combo pieces provided to execute attacks in sequence.
+                        </p><br>
+                        Animation cancelling is done inside the animator via checking the attack phase, which can be done with animation frame precision.
+                        <p>  
+             </div>
+    </div>
+    <div class="content-container split right border">
+        <div class="content-gallery">
+            <div class="gallery-image">
+                <img src="../images/AttackInterface.png" alt="Attack" data-imagebox="g2">
+                <p class="gallery-image-text">Attack Interface</p>
+            </div>
+            <div class="gallery-image">
+                <img src="../images/AttackMelee.png" alt="Melee Attack" data-imagebox="g2">
+                <p class="gallery-image-text" style="font-size: 80%;">Melee Attack</p>
+            </div>
+            <div class="gallery-image">
+                <img src="../images/AttackInspector.png" alt="Attack Inspector" data-imagebox="g2">
+                <p class="gallery-image-text">Attack Inspector</p>
+            </div>
+            <div class="gallery-image">
+                <img src="../images/AttackBase.png" alt="Attack Logic" data-imagebox="g2">
+                <p class="gallery-image-text">Attack Logic</p>
+            </div>
+            <div class="gallery-image">
+                <img src="../images/GetAoEtTargets.png" alt="AoE targeting" data-imagebox="g2">
+                <p class="gallery-image-text">AoE Targeting</p>
+            </div>
+            <div class="gallery-image">
+                <img src="../images/playerAnimator.png" alt="Player Animator" data-imagebox="g2">
+                <p class="gallery-image-text">Player Animator</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- #endregion-->
+<!-- #region experiences -->
+<div class="content-title" style="margin-bottom: 1em;">
+    <h1>Experiences</h1>
+</div>
+<div class ="content-container">
+        <div class="content-text-full">
+            <p>
+            The main challenge was implementing from design; Combat calculations were precisely determined but attack timings and making the system as modifiable as possible provided challenge in both implementation and planning
+            </p><br>
+            <p>
+            Overall I met both goals in the system being easily accessible from the inspector and being expandable if more weapons or attacks were to be added.
+            </p><br>
+            <p>
+            This system taught me about implementing from design documentation where I have to consult the game designers about how they want the system to work and look like in their hands.
+            </p><br>
+            <p>
+            I wanted to use C# interfaces as a part of studying better programming practices. I feel like I got a grasp of how to use an interface when designing a feature but when to use one requires a bit more work in the future.
+            </p><br>
+            <p>
+            Currently the game has only one simple sword combo for the player and the enemies only use a single base attack. Adding different attacks would allow the player to attack in different patterns. 
+            </p><br>
+            <p>
+            Status effects exist in code but aren't tested for production and there is no planned way of them being afflicted to entities.
+            </p>
+        </div>
+</div>
+<!-- #endregion-->
 <!-- #region enemyai -->
 <div class="content-container title">
     <div class="content-title center" style="text-align: center; font-size: 120%"><h1>Enemy Ai</h1></div>
@@ -141,94 +229,6 @@
         </div>
 </div>
 <!-- #endregion -->
-<!-- #region combatsystem -->
-<div class="content-container title">
-    <div class="content-title center" style="text-align: center; font-size: 120%">
-        <h1>Combat System</h1></div>
-</div>
-<div class="content" style="margin-bottom: 5em">
-    <div class="content-container split left">
-        <div class="content-title" style="margin-bottom: 1em;">
-            <h1>Overview</h1>
-        </div>
-            <div class="content-text">
-                        <p>
-                        I implemented our combat system according to a combat mechanic diagram provided to me by the content producers.
-                        </p>
-                        <br>
-                        <p>
-                        The goal was to make combat fluid with simple comboes, animation cancelling mechanics, utilize multiple weapons, critical hits and have status effects that affect entities.
-                        </p> <br>
-                        <p>
-                        I used Unity's scriptable objects to create combo attacks that can each be given their own animation and attack parameters. I also experimented with creating an interface for the attack.
-                        </p> <br>
-                        <p>
-                        Game Designers can choose from a multitude of options to easily create different attacks to create interesting comboes.
-                        </p><br>
-                        <p>
-                        Attack handling will then use the combo pieces provided to execute attacks in sequence.
-                        </p><br>
-                        Animation cancelling is done inside the animator via checking the attack phase, which can be done with animation frame precision.
-                        <p>  
-             </div>
-    </div>
-    <div class="content-container split right border">
-        <div class="content-gallery">
-            <div class="gallery-image">
-                <img src="../images/AttackInterface.png" alt="Attack" data-imagebox="g2">
-                <p class="gallery-image-text">Attack Interface</p>
-            </div>
-            <div class="gallery-image">
-                <img src="../images/AttackMelee.png" alt="Melee Attack" data-imagebox="g2">
-                <p class="gallery-image-text" style="font-size: 80%;">Melee Attack</p>
-            </div>
-            <div class="gallery-image">
-                <img src="../images/AttackInspector.png" alt="Attack Inspector" data-imagebox="g2">
-                <p class="gallery-image-text">Attack Inspector</p>
-            </div>
-            <div class="gallery-image">
-                <img src="../images/AttackBase.png" alt="Attack Logic" data-imagebox="g2">
-                <p class="gallery-image-text">Attack Logic</p>
-            </div>
-            <div class="gallery-image">
-                <img src="../images/GetAoEtTargets.png" alt="AoE targeting" data-imagebox="g2">
-                <p class="gallery-image-text">AoE Targeting</p>
-            </div>
-            <div class="gallery-image">
-                <img src="../images/playerAnimator.png" alt="Player Animator" data-imagebox="g2">
-                <p class="gallery-image-text">Player Animator</p>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- #endregion-->
-<!-- #region experiences -->
-<div class="content-title" style="margin-bottom: 1em;">
-    <h1>Experiences</h1>
-</div>
-<div class ="content-container">
-        <div class="content-text-full">
-            <p>
-            The main challenge was implementing from design; Combat calculations were precisely determined but attack timings and making the system as modifiable as possible provided challenge in both implementation and planning
-            </p><br>
-            <p>
-            Overall I met both goals in the system being easily accessible from the inspector and being expandable if more weapons or attacks were to be added.
-            </p><br>
-            <p>
-            This system taught me about implementing from design documentation where I have to consult the game designers about how they want the system to work and look like in their hands.
-            </p><br>
-            <p>
-            I wanted to use C# interfaces as a part of studying better programming practices. I feel like I got a grasp of how to use an interface when designing a feature but when to use one requires a bit more work in the future.
-            </p><br>
-            <p>
-            Currently the game has only one simple sword combo for the player and the enemies only use a single base attack. Adding different attacks would allow the player to attack in different patterns. 
-            </p><br>
-            <p>
-            Status effects exist in code but aren't tested for production and there is no planned way of them being afflicted to entities.
-            </p>
-        </div>
-</div>
-<!-- #endregion-->
 <!-- #region controller support-->
 <div class="content-container title">
     <div class="content-title center" style="text-align: center; font-size: 100%">
