@@ -55,7 +55,7 @@
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 50%;
+  width: 80%;
 }
 
 .footer-links a {
@@ -92,6 +92,38 @@
 
 .content-container {
   margin-bottom: 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content-container.title {
+  margin-bottom: 1em;
+}
+
+.split {
+  width: 50%;
+  margin-bottom: 0;
+}
+
+.right {
+  margin-left: 2em;
+}
+
+.right.border > .split-image > img {
+  border-left: 5px solid #009917;
+}
+
+.left {
+  margin-right: 2em;
+}
+
+.left.border > .split-image > img {
+  border-right: 5px solid #009917;
 }
 
 .content {
@@ -106,9 +138,29 @@
           flex-direction: row;
 }
 
+.content.main {
+  margin-bottom: 1em;
+}
+
 .content-image {
   width: 50%;
   height: 100%;
+}
+
+.split-image {
+  width: 100%;
+  height: 80%;
+}
+
+.split-image > img {
+  height: 100%;
+  width: 100%;
+}
+
+.split-image > i {
+  heigth: 100%;
+  width: 100%;
+  font-size: 400px;
 }
 
 .content-video {
@@ -129,8 +181,6 @@
 }
 
 .content-text {
-  margin-right: 2em;
-  width: 50%;
   height: 100%;
   font-size: 1.5em;
 }
@@ -165,7 +215,6 @@
 }
 
 .content-gallery {
-  width: 50%;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -189,17 +238,33 @@
 
 .pageLink {
   text-decoration: none;
+  position: relative;
   color: black;
-  -webkit-transition: 1s;
-  transition: 1s;
-}
-
-.pageLink:visited {
-  color: #00d11f;
+  display: inline-block;
+  padding: 0 1px;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
 }
 
 .pageLink:hover {
-  color: #009917;
+  color: white;
+}
+
+.pageLink::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 5%;
+  left: 0;
+  bottom: -2px;
+  background-color: black;
+  -webkit-transition: height 0.5s;
+  transition: height 0.5s;
+}
+
+.pageLink:hover::after {
+  height: 100%;
 }
 
 .gallery-image {
@@ -214,5 +279,11 @@
   top: 5%;
   left: 10%;
   text-shadow: 0px 2px black;
+}
+
+.gallery-image-text.black {
+  text-shadow: 0px 1px gray;
+  top: 8%;
+  color: black;
 }
 /*# sourceMappingURL=styles.css.map */
